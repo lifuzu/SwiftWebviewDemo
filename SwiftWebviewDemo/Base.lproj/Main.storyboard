@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6205" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6198"/>
-        <capability name="Constraints with attributes relative to the layout margin" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -18,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IuR-EO-LDz">
-                                <rect key="frame" x="16" y="556" width="600" height="44"/>
+                                <rect key="frame" x="0.0" y="556" width="600" height="44"/>
                                 <items>
                                     <barButtonItem systemItem="rewind" id="Ano-wk-ilE">
                                         <connections>
@@ -28,16 +27,8 @@
                                 </items>
                             </toolbar>
                             <webView contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="b96-aK-c8P">
-                                <rect key="frame" x="16" y="0.0" width="600" height="556"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="556"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="42" id="Eq4-tx-N3q"/>
-                                </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="Eq4-tx-N3q"/>
-                                    </mask>
-                                </variation>
                             </webView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -46,7 +37,7 @@
                             <constraint firstItem="b96-aK-c8P" firstAttribute="bottom" secondItem="IuR-EO-LDz" secondAttribute="top" id="CNA-7e-4y8"/>
                             <constraint firstItem="b96-aK-c8P" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="DGU-oJ-2NA"/>
                             <constraint firstAttribute="width" secondItem="b96-aK-c8P" secondAttribute="width" id="Mcg-l6-eHw"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="IuR-EO-LDz" secondAttribute="leading" id="PNV-DO-F1G"/>
+                            <constraint firstAttribute="left" secondItem="IuR-EO-LDz" secondAttribute="left" id="PNV-DO-F1G"/>
                             <constraint firstItem="b96-aK-c8P" firstAttribute="leading" secondItem="IuR-EO-LDz" secondAttribute="leading" id="Sbb-Wr-SbK"/>
                             <constraint firstAttribute="width" secondItem="IuR-EO-LDz" secondAttribute="width" id="nhS-vD-0l8"/>
                             <constraint firstAttribute="bottom" secondItem="IuR-EO-LDz" secondAttribute="bottom" id="vIO-ye-kl6"/>
